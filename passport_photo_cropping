@@ -25,6 +25,9 @@ def process_pictures(src_dir, dst_dir, ratio = (3,4) , free_space_ratio = 0.4, r
 		ratio ((int, int)): (Width,Height) The desired ratio of the cropped picture. (default: (3, 4))
 		free_space_ratio (float): (Percentage total) The amount of empty space the cropped pic should achieve to the left and right. (default: 0.4 = 40%)
 		read_extensions (array(string)): The picture extensions which should be read from the source directory. Other extensions will be ignored. (default see STANDARD_EXTENSIONS)
+
+	Return:
+	    void
 	"""
 	
 	src_path = Path(src_dir)
